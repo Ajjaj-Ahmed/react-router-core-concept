@@ -1,7 +1,5 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-
-
 import {
   createBrowserRouter,
   RouterProvider,
@@ -13,12 +11,15 @@ import Users from './Users/Users';
 import Userdetails from './UserDetails/Userdetails';
 import Posts from './Posts/Posts';
 import PostDetails from './PostDetails/PostDetails';
+import ErrorPage from './ErrorPage/ErrorPage';
+
 
 
 const router=createBrowserRouter([
   {
     path:'/',
     element:<Home></Home>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
       {
         path:'/contact',

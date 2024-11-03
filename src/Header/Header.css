@@ -1,4 +1,13 @@
-.mr{
-    margin-right: 10px;
-    text-decoration: none;
+button a.active{
+   /* text-decoration: none; */
+   color: white;
+   background-color: rgb(95, 11, 11);
+   
+}
+
+.nav-container{
+    padding: 10px;
+    display: flex;
+    justify-items: center;
+    gap: 20px;
 }
